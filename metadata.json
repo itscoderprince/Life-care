@@ -1,0 +1,7 @@
+{
+  "name": "Lifecare - Premium Healthcare Portal",
+  "description": "A sophisticated healthcare application featuring a comprehensive landing page, specialist directory, health insights, and a Gemini-powered medical assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
