@@ -18,34 +18,6 @@ const BookingPage: React.FC<BookingPageProps> = ({ onBack }) => {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      {/* Sticky Header */}
-      <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center size-9 bg-primary-600/10 rounded-lg text-primary-600">
-                <span className="material-symbols-outlined">local_hospital</span>
-              </div>
-              <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-                MediCare <span className="text-primary-600">Premium</span>
-              </h1>
-            </div>
-            {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center gap-8">
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 transition-colors" href="#">Doctors</a>
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 transition-colors" href="#">Services</a>
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 transition-colors" href="#">International Patients</a>
-            </nav>
-            {/* Actions */}
-            <div className="flex items-center gap-3">
-              <button onClick={onBack} className="hidden sm:flex text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 transition-colors">
-                Back to Home
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
         {/* Header Section */}

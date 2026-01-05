@@ -15,19 +15,20 @@ const Testimonials: React.FC = () => {
 
   return (
     <div className="py-24 bg-white overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16 text-center">
-        <h2 className="text-3xl font-bold text-slate-900 md:text-4xl tracking-tight">Voices of Excellence</h2>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16 text-center animate-fade-in">
+        <span className="text-primary-600 font-semibold text-sm uppercase tracking-wider">Patient Stories</span>
+        <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl tracking-tight">Voices of Excellence</h2>
         <p className="mt-4 text-slate-500 max-w-2xl mx-auto">Real stories from the patients we've had the privilege to serve.</p>
       </div>
 
       <div className="marquee-container relative flex overflow-hidden">
         <div className="flex animate-marquee whitespace-nowrap gap-8 py-4 px-4">
           {duplicatedTestimonials.map((t, idx) => (
-            <div 
-              key={`${t.name}-${idx}`} 
+            <div
+              key={`${t.name}-${idx}`}
               className="inline-block w-[300px] md:w-[400px] flex-shrink-0 whitespace-normal"
             >
-              <div className="h-full flex flex-col gap-6 p-8 border-l-4 border-primary-600 bg-slate-50/50 rounded-r-3xl transition-all hover:bg-white hover:shadow-xl-soft border border-transparent hover:border-slate-100">
+              <div className="h-full flex flex-col gap-6 p-8 border-l-4 border-primary-600 bg-slate-50/50 rounded-r-3xl transition-all duration-300 hover:bg-white hover:shadow-xl-soft border border-transparent hover:border-slate-100 hover:-translate-y-1">
                 <div className="flex text-yellow-500 gap-1">
                   {[1, 2, 3, 4, 5].map(s => <span key={s} className="material-symbols-outlined fill-current text-[14px]">star</span>)}
                 </div>
@@ -35,7 +36,7 @@ const Testimonials: React.FC = () => {
                   {t.text}
                 </blockquote>
                 <div className="flex items-center gap-4 mt-auto">
-                  <div className="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center ring-2 ring-white shadow-sm" style={{ backgroundImage: `url('${t.image}')` }}></div>
+                  <div className="h-12 w-12 rounded-full bg-slate-200 bg-cover bg-center ring-2 ring-white shadow-md transition-transform hover:scale-110" style={{ backgroundImage: `url('${t.image}')` }}></div>
                   <div>
                     <p className="text-sm font-bold text-slate-900">{t.name}</p>
                     <p className="text-[10px] md:text-xs text-slate-500 font-semibold uppercase tracking-wider">{t.role}</p>
@@ -45,7 +46,7 @@ const Testimonials: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         {/* Gradient overlays for the fade effect on sides */}
         <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>

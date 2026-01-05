@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials';
 import HealthInsights from './components/HealthInsights';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
-import AIAssistant from './components/AIAssistant';
+import SOSButton from './components/SOSButton';
 import BookingPage from './components/BookingPage';
 import DoctorsPage from './components/DoctorsPage';
 import SpecialtiesPage from './components/SpecialtiesPage';
@@ -98,7 +98,7 @@ const App: React.FC = () => {
       </main>
 
       <Footer onGoHome={navigateToHome} onOpenBooking={navigateToBooking} />
-      <AIAssistant />
+      <SOSButton />
     </div>
   );
 };
