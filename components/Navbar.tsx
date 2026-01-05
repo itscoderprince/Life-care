@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <nav className={`sticky top-0 z-50 w-full transition-all duration-300 border-b ${isScrolled ? 'glass-nav border-slate-100 h-16' : 'bg-slate-50 border-transparent h-20'}`}>
+      <nav className={`sticky top-0 z-50 w-full transition-all duration-300 border-b ${isScrolled ? 'glass-nav border-slate-100 h-14' : 'bg-slate-50 border-transparent h-16'}`}>
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 lg:px-8">
           <button onClick={onGoHome} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-600 text-white shadow-glow">

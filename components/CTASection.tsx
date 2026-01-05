@@ -23,7 +23,7 @@ const CTASection: React.FC<CTASectionProps> = ({ onOpenBooking }) => {
 
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4 leading-[1.1]">
               Prioritize Your <br className="hidden sm:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">Health Journey Today</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-primary-300">Health Journey Today</span>
             </h2>
 
             <p className="mx-auto max-w-2xl text-base md:text-lg text-blue-100/80 mb-6 font-light leading-relaxed">

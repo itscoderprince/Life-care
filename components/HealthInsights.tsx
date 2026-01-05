@@ -35,10 +35,10 @@ const HealthInsights: React.FC = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6 animate-fade-in">
           <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 border border-primary-100 mb-4">
+            {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 border border-primary-100 mb-4">
               <span className="flex h-1.5 w-1.5 rounded-full bg-primary-600 animate-pulse" />
               <span className="text-[10px] font-bold uppercase tracking-wider text-primary-600">Stay Informed</span>
-            </div>
+            </div> */}
             <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Latest Health <span className="text-primary-600">Insights</span></h2>
             <p className="mt-4 text-slate-500 text-lg leading-relaxed">
               Explore professional advice and the latest medical breakthroughs curated by our team of experts.
